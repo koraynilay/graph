@@ -185,7 +185,7 @@ typename graph_traits< Graph >::vertex_descriptor sloan_start_end_vertices(
         // step 4
         // pushing one node of each degree in an ascending manner into
         // degree_queue
-        std::vector< bool > shrink_trace(maximum_degree, false);
+        std::vector< bool > shrink_trace(maximum_degree + 1, false);
         for (boost::tie(ui, ui_end) = vertices(G); ui != ui_end; ++ui)
         {
             dummy = get(degree, *ui);

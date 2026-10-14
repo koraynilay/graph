@@ -120,6 +120,7 @@ alias graph_test_regular :
     [ run min_degree_empty.cpp ]
     [ run cuthill_mckee_ordering.cpp ]
     [ run king_ordering.cpp ]
+    [ run sloan_ordering.cpp ]
     [ run matching_test.cpp ]
     [ run weighted_matching_test.cpp : $(WEIGHTED_MATCHING_INPUT_FILE) ]
     [ run weighted_matching_test2.cpp ]
